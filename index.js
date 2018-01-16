@@ -67,7 +67,7 @@ if(usrIn < 100){
 
 // Try running the script and then changing the variable's value to see how this affects the program's output.
 
-if(str1 == str2){
+if(str1 === str2){
 	console.log("String 1:", str1, "is the same as", str2);
 } else{
 	console.log("String 1:", str1, "is not the same as", str2);
@@ -101,7 +101,7 @@ var bool = false;
 
 while(!bool){
 	var choice = prompt("Pick a door from 1-5:");
-	if(choice == 1 || choice == 2 || choice == 3 || choice == 4 || choide == 5){
+	if(choice == 1 || choice == 2 || choice == 3 || choice == 4 || choice == 5){
 		bool = true;
 		switch (choice) {
 			case "1":
@@ -123,6 +123,9 @@ while(!bool){
 				alert("You win nothing");
 		}
 		console.log(choice);
+	}
+	else{
+		alert("Try again...");
 	}
 }
 
