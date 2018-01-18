@@ -25,11 +25,6 @@ function clicked(){
 	document.getElementsByClassName("modal-body")[0].style.fontSize = "3em";
 }
 
-function close() {
-	modal.style.display = "none";
-}
-
-
 for(let i = 0; i < 4; i++){
 	setInterval(function(){ 
 		document.getElementsByClassName("shape")[i].style.marginTop = ""+getRandomInt(1000)+"px"; 
