@@ -1,0 +1,55 @@
+#_h1_ {
+	text-align: center;
+	font-size: 4em;
+	animation: fadein 3s;
+	color: white;
+}
+
+#wrapper{
+	margin-left: 50px;
+	text-align: center;
+	color: white;
+	font-size: 1.25em;
+
+}
+
+.shape{
+	width: 100px;
+	height: 100px;
+	border-radius:50%;
+	background-color: white;
+	position: absolute;
+	z-index:1;
+	opacity: 0.5;
+	animation: blink_ 1s infinite alternate;
+}
+.shape1{
+	width: 100px;
+	height: 100px;
+	border-radius:50%;
+	background-color: white;
+	position: absolute;
+	z-index:1;
+	opacity: 0.5;
+	animation: blink_ .5s infinite alternate;
+}
+.shape2{
+	width: 100px;
+	height: 100px;
+	border-radius:50%;
+	background-color: white;
+	position: absolute;
+	z-index:1;
+	opacity: 0.5;
+	animation: blink_ 1.5s infinite alternate;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes blink_ {
+	0%{transform: scale(0.0);}
+	100%{transform: scale(1.0);}
+}
