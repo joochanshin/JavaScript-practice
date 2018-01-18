@@ -53,7 +53,14 @@ for(let i = 0; i < 4; i++){
 	}, 3000);
 }
 
+var body = document.getElementById("body");
 
+body.addEventListener("keydown", function(){
+	var _1 = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+	var _2 = '#'+(Math.random()*0xFFFFFEs<<0).toString(16);
+	body.style.background = "linear-gradient(-45deg,"+_1+","+_2+")";
+	body.style.backgroundSize = "400% 1000%";
+});
 
 
 

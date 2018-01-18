@@ -5,6 +5,14 @@
 	color: white;
 }
 
+#_t_{
+	color: white;
+	margin: 0 auto; 
+	text-align: center; 
+	font-size:36px;
+	animation: fadein 6s;
+}
+
 #wrapper{
 	margin-left: 50px;
 	text-align: center;
