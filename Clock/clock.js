@@ -8,12 +8,12 @@ function clock(){
 	hr = convert(hr);
 	mn = convert(mn);
 	sc = convert(sc);
-
+	var color = "#"+hr+mn+sc;
 	document.getElementById("clock").innerHTML = hr+":"+mn+":"+sc;
-	setInterval(clock, 1000);
+	document.getElementById("body").style.background = color;
 }
 
-
+setInterval(clock, 1000);
 
 function convert(i) {
     if (i < 10) {
