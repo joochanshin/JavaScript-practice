@@ -5,11 +5,19 @@ function clock(){
 	var mn = now.getMinutes();
 	var sc = now.getSeconds();
 	//
-	hr = convert(hr);
+	var _m = "";
+	var hr1=hr;
+	if(hr%12>=1){
+		_m = "PM";
+		hr=hr-12;
+	} else {
+		_m = "AM";
+	}
+	hr1 = convert(hr1);
 	mn = convert(mn);
 	sc = convert(sc);
-	var color = "#"+hr+mn+sc;
-	document.getElementById("clock").innerHTML = hr+":"+mn+":"+sc;
+	var color = "#"+hr1+mn+sc;
+	document.getElementById("clock").innerHTML = hr+":"+mn+":"+sc+" " + _m;
 	document.getElementById("body").style.background = color;
 }
 
