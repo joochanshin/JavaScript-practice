@@ -80,7 +80,7 @@ function clicked1(){
 
 function clicked2(){
 	document.getElementById("orbit").style.animation = "rotate 10s linear infinite";
-	for(let i = 0; i < 8; i++){
+	for(let i = 0; i < Album.length_(); i++){
 		document.getElementsByClassName("img")[i].style.backgroundColor = "white";
 	}
 }
@@ -90,7 +90,7 @@ function clicked3(){
 }
 
 function clicked4(){
-	for(let i = 0; i < 8; i++){
+	for(let i = 0; i < Album.length_(); i++){
 		document.getElementsByClassName("img")[i].style.backgroundColor = "red";
 	}
 }
