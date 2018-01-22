@@ -1,0 +1,67 @@
+.img{
+	z-index: 1;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+}
+
+#orbit{
+	margin-top: 200px;
+	margin-left: 400px;
+	width: 400px;
+	border-radius: 50%;
+	animation: rotate 10s linear infinite;
+}
+
+#box0{
+	margin-top: 0px;
+}
+
+.box{
+	width: 100px;
+	height: 100px;
+	text-align: center;
+}
+
+#box1{
+	background-color: red;
+	color: white;
+	float: left;
+}
+
+#box2{
+	background-color: blue;
+	color: white;
+	float: left;
+}
+
+#box3{
+	background-color: orange;
+	color: white;
+	float: right;
+}
+
+#box4{
+	background-color: green;
+	color: white;
+	float: right;
+}
+
+@keyframes rotate{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes grow{
+	0%{
+		transform: scale(0.0);
+	}
+	50%{
+		transform: scale(1.0);
+	}
+	100%{
+		transform: scale(0.0);
+	}
+}
+
