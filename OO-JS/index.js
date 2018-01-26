@@ -161,8 +161,28 @@ console.log(School.list_T());
 
 
 
+var obj = {
+    name: 'torture',
+    miniObj: {
+        name: 'Minitorture',
+        array: [{
+            numbers: [['a', 'b', 'c'], 
+            [1,2,3,4,5,6,7,8,9],             
+            ['fun']]//array of array
+        }]//array
+    }//miniObj
+}
 
+console.log(obj.miniObj.array[0].numbers[1]);
 
+function getSum(total, num) {
+    return total + num;
+}
+
+function __add__(){
+	console.log(obj.miniObj.array[0].numbers[1].reduce(getSum));
+}
+__add__();
 
 
 
