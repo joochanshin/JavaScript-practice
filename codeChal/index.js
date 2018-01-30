@@ -13,6 +13,36 @@ console.log(6+ ": " + stringy(6));
 console.log(4+ ": " + stringy(4));
 console.log(12+ ": " + stringy(12));
 
+function convert(n){	//	Only works for 65535 because only works for 16-bit numbers
+	var number = [];
+	for(var i = 15; i >= 0; i--){
+		if(n >= Math.pow(2, i+1)){
+			alert("Number exceeded limit");
+			break;
+		}
+		if(n < Math.pow(2, i+1) && n >= Math.pow(2, i)){
+			number.push(1);
+			n = n - Math.pow(2, i);
+		}
+		else{
+			//console.log(i, Math.pow(2,i));
+			number.push(0);
+		}
+	}
+	return number;
+}
+
+function _print_ (array){
+	var binary = "";
+	for(var i = 0; i < array.length; i++){
+		binary = binary + array[i];
+	}
+	return binary;
+}
+
+var n = 65535;
+console.log(_print_(convert(n)));
+
 function reverse(str){
 	var digits = [];
 	for(let i = str.length; i >= 0; i--){
@@ -120,7 +150,6 @@ function isEmail(str) {
 	return str.length === 1 && str.match(/\w/i);
 }
 function checkEmail(email){
-	var bool = true;
 	var iter = 0;
 	if(!isLetter(email[0])){
 		console.log("Not an email");
