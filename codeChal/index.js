@@ -40,8 +40,8 @@ function _print_ (array){
 	return binary;
 }
 
-var n = 65535;
-console.log(_print_(convert(n)));
+var n = 6587;
+console.log("The number, " + n + ", is " + _print_(convert(n)) + " in binary");
 
 function reverse(str){
 	var digits = [];
@@ -142,7 +142,7 @@ function checkCoupon (date){
 		console.log("Coupon is valid");
 }
 
-checkCoupon("June 7, 2018");
+checkCoupon("June 7, 2017");
 function isLetter(str) {
 	return str.length === 1 && str.match(/[A-Za-z]/i);
 }
