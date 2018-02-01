@@ -1,0 +1,35 @@
+#circle1 {
+	margin-top: 10px;
+	@include size($w1, $h1);
+	@include circ;
+	background-color: $color2;
+}
+
+#circle2 {
+	@extend #circle1;
+	background-color: $color3;
+}
+
+#circle3 {
+	@extend #circle1;
+	background-color: $color4;
+}
+
+#circle4 {
+	@extend #circle1;
+	background-color: $color5;
+}
+
+#circle5 {
+	@extend #circle1;
+	background-color: $color6;
+}
+
+#circle6 {
+	@extend #circle1;
+	background-color: $color7;
+}
+
+#triangle {
+	@include triangle("up", $w1, $h1, $color8);
+}

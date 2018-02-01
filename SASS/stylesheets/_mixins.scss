@@ -1,6 +1,11 @@
 @mixin box{
-	width: 50%;
-	height: 100px;
+	// width: 50%;
+	// height: 100px;
 	border: 2px solid red;
 	margin: 30px auto;
+}
+
+@mixin box-size ($width, $height){
+	width: $width;
+	height: $height;
 }

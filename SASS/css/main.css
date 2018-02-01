@@ -12,10 +12,24 @@ li {
   display: inline-block;
   margin-right: 40px; }
 
+h1 {
+  text-align: center; }
+
 #box1 {
-  width: 50%;
-  height: 100px;
   border: 2px solid red;
-  margin: 30px auto; }
+  margin: 30px auto;
+  width: 200px;
+  height: 100px;
+  box-shadow: 5px 5px 5px green; }
+
+#box2, #box3 {
+  border: 2px solid red;
+  margin: 30px auto;
+  width: 400px;
+  height: 100px; }
+
+#box3 {
+  width: 600px;
+  height: 100px; }
 
 /*# sourceMappingURL=main.css.map */

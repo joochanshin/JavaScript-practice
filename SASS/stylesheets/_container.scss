@@ -1,11 +1,24 @@
+h1 {
+	text-align: center;
+}
+
 #box1{
 	@include box;
+	@include box-size(200px,100px);
+	box-shadow: $box-shadow;
 }
 
 #box2{
-
+	@include box;
+	@include box-size(400px,100px);
 }
 
 #box3{
+	@extend #box2;
+	// @include box;
+	@include box-size(600px,100px);
+}
 
+#box4{
+	@extend #box2;
 }
