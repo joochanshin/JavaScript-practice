@@ -33,3 +33,9 @@
 #triangle {
 	@include triangle("up", $w1, $h1, $color8);
 }
+
+#blob {
+	@include size($size, $size);
+	background: $color1;
+	animation: squareToCircle 2s 1s infinite alternate;
+}

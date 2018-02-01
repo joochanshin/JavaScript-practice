@@ -2,6 +2,28 @@ body {
   background-color: #99cccc;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif; }
 
+@keyframes squareToCircle {
+  0% {
+    border-radius: 0 0 0 0;
+    background: teal;
+    transform: translateX(0px); }
+  25% {
+    border-radius: 50% 0 0 0;
+    background: salmon;
+    transform: translateX(250px); }
+  50% {
+    border-radius: 50% 50% 0 0;
+    background: green;
+    transform: translateX(250px) translateY(250px); }
+  75% {
+    border-radius: 50% 50% 50% 0;
+    background: blue;
+    transform: rotate(135deg);
+    transform: translateX(0px) translateY(250px); }
+  100% {
+    border-radius: 50% 50% 50% 50%;
+    background: yellow;
+    transform: translateX(0px) translateY(0px); } }
 #circle1, #circle2, #circle3, #circle4, #circle5, #circle6 {
   margin-top: 10px;
   width: 100px;
@@ -31,5 +53,11 @@ body {
   width: 0;
   border-color: transparent transparent #b25c9c;
   border-width: 0 50px 100px; }
+
+#blob {
+  width: 200px;
+  height: 200px;
+  background: teal;
+  animation: squareToCircle 2s 1s infinite alternate; }
 
 /*# sourceMappingURL=main.css.map */
