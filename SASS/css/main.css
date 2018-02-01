@@ -1,0 +1,21 @@
+body {
+  background-color: teal; }
+
+.navbar {
+  width: 400px;
+  height: 70px;
+  border: 2px solid;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px green; }
+
+li {
+  display: inline-block;
+  margin-right: 40px; }
+
+#box1 {
+  width: 50%;
+  height: 100px;
+  border: 2px solid red;
+  margin: 30px auto; }
+
+/*# sourceMappingURL=main.css.map */
