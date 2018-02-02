@@ -235,55 +235,102 @@
 // 	console.log(naming.value);
 // }
 
-function three4 (){
-	var sum = 0;
-	for(let i = 0; i <= 1000; i++){
-		if(i%3 === 0)
-			sum += i;
-		else if (i%4 === 0)
-			sum += i;
-	}
-	return sum;
+// function three4 (){
+// 	var sum = 0;
+// 	for(let i = 0; i <= 1000; i++){
+// 		if(i%3 === 0)
+// 			sum += i;
+// 		else if (i%4 === 0)
+// 			sum += i;
+// 	}
+// 	return sum;
+// }
+
+// function stars(length){
+// 	var str = "";
+// 	for(let i = 0; i < length; i++){
+// 		str += "*";
+// 	}
+// 	return str;
+// }
+
+// function stars2(str){
+// 	var str2 = "";
+// 	for(let i = 0; i < str.length; i++){
+// 		str2 += str + "\n";
+// 	}
+// 	return str2;
+// }
+
+// function fact(num){
+// 	if(num < 0)
+// 		return null;
+// 	else if (num === (0||1))
+// 		return 1;
+// 	else
+// 		return num*fact(num-1)
+// }
+
+// console.log(three4());
+// console.log(stars(5));
+// console.log(stars2(stars(5)));
+// console.log(fact(5));
+
+var body = document.getElementById("body");
+
+var divA = document.createElement("div");
+var divE = document.createElement("div");
+var divI = document.createElement("div");
+var divO = document.createElement("div");
+var divU = document.createElement("div");
+
+var nodeA = document.createTextNode("A");
+var nodeE = document.createTextNode("E");
+var nodeI = document.createTextNode("I");
+var nodeO = document.createTextNode("O");
+var nodeU = document.createTextNode("U");
+
+divA.appendChild(nodeA);
+divE.appendChild(nodeE);
+divI.appendChild(nodeI);
+divO.appendChild(nodeO);
+divU.appendChild(nodeU);
+
+divA.style.width = "30px";
+divA.style.height = "30px";
+divA.style.border = "2px solid black";
+
+divA.setAttribute("onclick", "clicked(divA)");
+divE.setAttribute("onclick", "clicked(divE)")
+divI.setAttribute("onclick", "clicked(divI)")
+divO.setAttribute("onclick", "clicked(divO)")
+divU.setAttribute("onclick", "clicked(divU)")
+
+divE.style.width = "30px";
+divE.style.height = "30px";
+divE.style.border = "2px solid black";
+
+divI.style.width = "30px";
+divI.style.height = "30px";
+divI.style.border = "2px solid black";
+
+divO.style.width = "30px";
+divO.style.height = "30px";
+divO.style.border = "2px solid black";
+
+divU.style.width = "30px";
+divU.style.height = "30px";
+divU.style.border = "2px solid black";
+
+body.appendChild(divA);
+body.appendChild(divE);
+body.appendChild(divI);
+body.appendChild(divO);
+body.appendChild(divU);
+
+function clicked(x){
+	console.log(x.textContent);
 }
-
-function stars(length){
-	var str = "";
-	for(let i = 0; i < length; i++){
-		str += "*";
-	}
-	return str;
-}
-
-function stars2(str){
-	var str2 = "";
-	for(let i = 0; i < str.length; i++){
-		str2 += str + "\n";
-	}
-	return str2;
-}
-
-function fact(num){
-	if(num < 0)
-		return null;
-	else if (num === (0||1))
-		return 1;
-	else
-		return num*fact(num-1)
-}
-
-console.log(three4());
-console.log(stars(5));
-console.log(stars2(stars(5)));
-console.log(fact(5));
-
-
-
-
-
-
-
-
-
 
 
 
